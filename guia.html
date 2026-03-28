@@ -8,303 +8,17 @@
     name="description"
     content="Guía de uso para pacientes de My Therapy Moment. Aprendé paso a paso cómo instalar, registrarte y usar MTM."
   />
+  
+  <link rel="stylesheet" href="styles.css" />
 
-  <style>
-    :root {
-      --bg: #f5f7fb;
-      --surface: #ffffff;
-      --surface-soft: #eef3ff;
-      --text: #1e2430;
-      --muted: #5a6475;
-      --primary: #4f7cff;
-      --primary-dark: #355ee0;
-      --border: #dfe6f3;
-      --shadow: 0 10px 30px rgba(24, 39, 75, 0.08);
-      --radius: 18px;
-      --max-width: 1100px;
-    }
+  <link rel="icon" href="/favicon.ico" />
 
-    * {
-      box-sizing: border-box;
-    }
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--primary-dark);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      width: min(100% - 32px, var(--max-width));
-      margin: 0 auto;
-    }
-
-    .hero {
-      padding: 56px 0 36px;
-      background: linear-gradient(180deg, #eaf0ff 0%, #f5f7fb 100%);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .hero-inner {
-      display: grid;
-      gap: 18px;
-    }
-
-    .badge {
-      display: inline-block;
-      width: fit-content;
-      background: #dfe8ff;
-      color: var(--primary-dark);
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      font-weight: bold;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15;
-    }
-
-    .hero p {
-      margin: 0;
-      max-width: 760px;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 8px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 12px;
-      font-weight: bold;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-      transition: 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      text-decoration: none;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-      border-color: var(--primary);
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-dark);
-    }
-
-    .toc {
-      margin: 28px auto 10px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 20px;
-    }
-
-    .toc h2 {
-      margin-top: 0;
-      margin-bottom: 12px;
-      font-size: 1.2rem;
-    }
-
-    .toc-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    .toc-list a {
-      display: block;
-      padding: 10px 12px;
-      background: var(--surface-soft);
-      border-radius: 12px;
-      color: var(--text);
-      font-size: 0.95rem;
-    }
-
-    .main {
-      padding: 20px 0 60px;
-    }
-
-    .section-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      margin-bottom: 22px;
-    }
-
-    .section-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 0;
-    }
-
-    .section-content {
-      padding: 28px;
-    }
-
-    .section-media {
-      background: #f0f4fc;
-      border-left: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 280px;
-      padding: 20px;
-    }
-
-    .section-media img {
-      width: 100%;
-      max-width: 420px;
-      height: auto;
-      display: block;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: white;
-    }
-
-    .img-placeholder {
-      width: 100%;
-      max-width: 420px;
-      min-height: 240px;
-      border: 2px dashed #b8c6e6;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      background: rgba(255,255,255,0.75);
-    }
-
-    .step {
-      display: inline-block;
-      margin-bottom: 12px;
-      background: #e6edff;
-      color: var(--primary-dark);
-      font-weight: bold;
-      font-size: 0.9rem;
-      padding: 6px 10px;
-      border-radius: 999px;
-    }
-
-    h2 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 1.6rem;
-      line-height: 1.2;
-    }
-
-    .section-content p {
-      margin-top: 0;
-      color: var(--muted);
-    }
-
-    .section-content ul {
-      margin: 14px 0 0;
-      padding-left: 20px;
-    }
-
-    .section-content li + li {
-      margin-top: 8px;
-    }
-
-    .tip {
-      margin-top: 16px;
-      padding: 14px 16px;
-      border-radius: 14px;
-      background: var(--surface-soft);
-      border: 1px solid #d7e3ff;
-      color: var(--text);
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: var(--primary-dark);
-    }
-
-    .footer-box {
-      margin-top: 26px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 24px;
-      text-align: center;
-    }
-
-    .footer-box p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    @media (max-width: 860px) {
-      .section-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .section-media {
-        border-left: none;
-        border-top: 1px solid var(--border);
-        min-height: auto;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .hero {
-        padding-top: 42px;
-      }
-
-      .section-content,
-      .section-media,
-      .toc,
-      .footer-box {
-        padding: 18px;
-      }
-
-      h2 {
-        font-size: 1.35rem;
-      }
-    }
-  </style>
+  <link rel="apple-touch-icon" href="/icon-192-rounded.png" />
 </head>
-<body>
+<!-- <body>
 
   <header class="hero">
     <div class="container hero-inner">
@@ -314,8 +28,19 @@
         Esta guía te ayudará a dar tus primeros pasos en MTM: instalar la app,
         registrarte, ingresar al chat con tu terapeuta y aprovechar cada sección
         de la plataforma.
-      </p>
-
+      </p> -->
+<body>
+  <div class="page-shell">
+    <div class="container">
+      <div class="brand-top">
+        <div class="brand-logo">
+          <img src="/icon-192-rounded.png" alt="Logo de MTM" />
+        </div>
+        <h1 class="brand-title">Guía de uso MTM</h1>
+        <p class="brand-subtitle">
+          Paso a paso para comenzar a usar My Therapy Moment.
+        </p>
+      </div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://app.mytherapymoment.com/" target="_blank" rel="noopener noreferrer">
           Abrir la app
@@ -665,7 +390,22 @@
         </div>
       </section>
 
-      <div class="footer-box">
+            <div class="footer-box">
+        <h2>Ante cualquier duda</h2>
+        <p>
+          Si tenés preguntas sobre el funcionamiento de la plataforma,
+          consultá con tu terapeuta. Él o ella podrá orientarte según la modalidad
+          de trabajo que hayan acordado.
+        </p>
+      </div>
+
+      <footer class="site-footer">
+        <p>My Therapy Moment — Guía para pacientes</p>
+      </footer>
+    </div>
+  </div>
+</body>
+      <!-- <div class="footer-box">
         <h2>Ante cualquier duda</h2>
         <p>
           Si tenés preguntas sobre el funcionamiento de la plataforma,
@@ -677,5 +417,5 @@
     </div>
   </main>
 
-</body>
+</body> -->
 </html>
