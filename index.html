@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Therapy Moment (MTM)</title>
+
+  <meta name="description" content="My Therapy Moment es un espacio terapéutico asincrónico que te permite expresarte con tiempo, claridad y profundidad." />
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --text: #1e2430;
+      --muted: #5a6475;
+      --primary: #4f7cff;
+      --primary-dark: #355ee0;
+      --surface: #ffffff;
+      --border: #e2e8f5;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(24, 39, 75, 0.08);
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 24px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: white;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--text);
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    section {
+      margin: 40px 0;
+    }
+
+    .card {
+      background: var(--surface);
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .feature {
+      background: #f0f4ff;
+      padding: 18px;
+      border-radius: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="container">
+    <h1>My Therapy Moment (MTM)</h1>
+    <p class="subtitle">
+      Un espacio terapéutico donde podés expresarte con tiempo, claridad y profundidad,
+      y recibir devoluciones cuando tu terapeuta esté en su mejor momento para responder.
+    </p>
+
+    <div class="buttons">
+      <a class="btn btn-primary" href="https://app.mytherapymoment.com/" target="_blank">
+        Abrir la app
+      </a>
+      <a class="btn" href="/guia.html">
+        Ver guía de uso
+      </a>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <h2>¿Qué es MTM?</h2>
+      <p>
+        My Therapy Moment es una plataforma de trabajo terapéutico asincrónico.
+        Esto significa que podés enviar tus mensajes y audios en el momento que lo necesites,
+        y tu terapeuta te responderá dentro del tiempo acordado.
+      </p>
+      <p>
+        A diferencia de otras aplicaciones de mensajería, MTM está diseñado para favorecer
+        la reflexión, el orden y la profundidad en el proceso terapéutico.
+      </p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="card">
+      <h2>¿Cuándo puede ser útil?</h2>
+
+      <div class="grid">
+        <div class="feature">
+          <strong>🧠 Procesar con más tiempo</strong>
+          <p>Pensar y expresar lo que sentís sin la presión del momento.</p>
+        </div>
+
+        <div class="feature">
+          <strong>🎙️ Expresarte en profundidad</strong>
+          <p>Enviar audios o textos largos sin interrupciones.</p>
+        </div>
+
+        <div class="feature">
+          <strong>📅 Entre sesiones</strong>
+          <p>Mantener el trabajo terapéutico activo entre encuentros.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="card">
+      <h2>¿Cómo empezar?</h2>
+      <ul>
+        <li>Ingresá a la app desde el botón superior</li>
+        <li>Registrate con el código de tu terapeuta</li>
+        <li>Accedé al chat y comenzá a expresarte</li>
+      </ul>
+
+      <p>
+        Si es tu primera vez, te recomendamos ver la guía paso a paso.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="/guia.html">Ir a la guía completa</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>My Therapy Moment — Espacio de trabajo terapéutico asincrónico</p>
+  </footer>
+
+</body>
+</html>
