@@ -733,14 +733,14 @@ footer.site-footer {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 22px;
-    font-size: clamp(1.5rem, 9vw, 2rem);
+    font-size: clamp(1.8rem, 10vw, 2.2rem);
     line-height: 1.05;
     text-align: center;
   }
 
   .eyebrow img {
-    width: clamp(70px, 22vw, 95px);
-    height: clamp(70px, 22vw, 95px);
+    width: clamp(60px, 18vw, 85px);
+    height: clamp(60px, 18vw, 85px);
     border-radius: 16px;
   }
 
