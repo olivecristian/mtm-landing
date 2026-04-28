@@ -733,7 +733,7 @@ footer.site-footer {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 22px;
-    font-size: clamp(2rem, 11vw, 3rem);
+    font-size: clamp(1.5rem, 9vw, 2rem);
     line-height: 1.05;
     text-align: center;
   }
