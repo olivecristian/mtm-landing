@@ -3,89 +3,507 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Therapy Moment (MTM)</title>
 
-  <meta name="description" content="My Therapy Moment es un espacio terapéutico asincrónico que te permite expresarte con tiempo, claridad y profundidad." />
-  
+  <title>My Therapy Moment (MTM) | Terapia asincrónica</title>
+
+  <meta
+    name="description"
+    content="My Therapy Moment es un espacio terapéutico asincrónico para expresar, ordenar e integrar tu proceso con acompañamiento profesional y un encuadre claro."
+  />
+
   <link rel="stylesheet" href="styles.css" />
-  
-    <link rel="icon" href="/favicon.ico" />
 
+  <link rel="icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
-
   <link rel="apple-touch-icon" href="/icon-192-rounded.png" />
 </head>
 
 <body>
-  <div class="page-shell">
+  <div class="page-shell landing-page">
     <div class="container">
-      <div class="brand-top">
-        <div class="brand-logo">
-          <img src="/icon-192-rounded.png" alt="Logo de MTM" />
-        </div>
-        <h1 class="brand-title">My Therapy Moment (MTM)</h1>
-        <p class="brand-subtitle">
-          Un espacio terapéutico donde podés expresarte con tiempo, claridad y profundidad.
-        </p>
-      </div>
+      <nav class="landing-nav">
+        <a class="nav-brand" href="#">
+          <img src="/icon-192-rounded.png" alt="Logo de My Therapy Moment" />
+          <span>My Therapy Moment</span>
+        </a>
 
-      <header class="hero-card center">
-        <div class="buttons" style="justify-content:center;">
+        <div class="nav-links">
+          <a href="#que-es">Qué es</a>
+          <a href="#modalidades">Modalidades</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#faq">FAQ</a>
+          <a href="/guia.html">Guía</a>
+        </div>
+
+        <a class="btn btn-primary nav-cta" href="https://app.mytherapymoment.com/" target="_blank" rel="noopener noreferrer">
+          Abrir la app
+        </a>
+      </nav>
+
+      <!-- HERO -->
+      <header class="landing-hero abstract-hero">
+        <div class="hero-content">
+
+          <!-- Marca + logo -->
+          <p class="eyebrow">
+            <img src="/icon-192-rounded.png" alt="Logo MTM" />
+            My Therapy Moment
+          </p>
+
+          <!-- Título principal SEO / semántico -->
+          <h1 class="hero-title">
+            Terapia asincrónica, en sincronía con tu proceso interior.
+          </h1>
+
+          <!-- Frase alternada / emocional -->
+          <div class="hero-phrases">
+            <p class="hero-note phrase-1">
+              Expresá lo que te pasa, cuando te pasa.
+            </p>
+
+            <p class="hero-note phrase-2">
+              Tu proceso no ocurre solo el día de sesión.
+            </p>
+          </div>
+
+          <!-- Subtexto -->
+          <p class="hero-subtitle">
+            Una nueva forma de hacer terapia: más flexible, continua y adaptada a tus propios tiempos.
+            Expresá, ordená e integrá lo que te pasa en un espacio propio, con acompañamiento profesional
+            y un encuadre claro.
+          </p>
+
+          <div class="hero-actions center-actions">
+            <a class="btn btn-primary" href="https://app.mytherapymoment.com/" target="_blank">
+              Abrir la app
+            </a>
+
+            <a class="btn btn-accent" href="/guia.html">
+              Ver guía de uso
+            </a>
+
+            <a class="btn btn-light" href="#como-funciona">
+              Conocer cómo funciona
+            </a>
+          </div>
+
+        </div>
+      </header>
+
+      <!-- PROBLEMA / IDENTIFICACIÓN -->
+      <section id="que-es" class="card landing-section">
+
+        <div class="section-kicker">
+          Una terapia más cercana a la vida real
+        </div>
+
+        <h2>
+          Tu proceso no ocurre solo el día de sesión
+        </h2>
+
+        <p class="lead">
+          Hay cosas importantes que aparecen después de una sesión, durante la semana o en momentos inesperados:
+          una emoción, una duda, una decisión, un recuerdo o un insight que necesitás elaborar.
+        </p>
+
+        <p class="lead">
+          La terapia asincrónica permite darle lugar a eso:
+          <strong>lo que te pasa, cuando te pasa</strong>, sin depender únicamente de un horario fijo.
+        </p>
+
+        <div class="prompt-grid">
+
+          <div class="prompt-card">
+            <span>💭</span>
+            <p>Terminás una sesión y después te acordás de algo importante.</p>
+          </div>
+
+          <div class="prompt-card">
+            <span>🌿</span>
+            <p>Durante la semana aparece algo que necesitás procesar.</p>
+          </div>
+
+          <div class="prompt-card">
+            <span>✨</span>
+            <p>Surge una emoción o un insight que no querés dejar pasar.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- QUÉ ES -->
+      <section class="card landing-section">
+
+        <div class="section-kicker">
+          Qué es My Therapy Moment
+        </div>
+
+        <h2>
+          Un espacio terapéutico asincrónico para trabajar en tu proceso
+        </h2>
+
+        <p class="lead">
+          My Therapy Moment es una plataforma de psicoterapia asincrónica que te permite expresar,
+          registrar y elaborar lo que te pasa en distintos momentos de tu vida cotidiana,
+          sin depender de un horario fijo.
+        </p>
+
+        <p class="lead">
+          Podés escribir, grabar audios, tomar notas personales y compartir con tu terapeuta aquello
+          que necesites trabajar, recibiendo devoluciones dentro de un encuadre claro y acordado.
+        </p>
+
+        <p class="lead highlight-text">
+          No es solo una herramienta de comunicación. Es un espacio pensado para dar continuidad,
+          profundidad y orden a tu proceso terapéutico.
+        </p>
+
+        <div class="grid grid-3">
+
+          <div class="feature">
+            <h3>🧠 Psicoterapia asincrónica</h3>
+            <p class="muted">
+              Trabajás en tu proceso sin depender de coincidir en un mismo momento con tu terapeuta.
+            </p>
+          </div>
+
+          <div class="feature feature-soft">
+            <h3>📝 Registro del proceso</h3>
+            <p class="muted">
+              Podés dejar por escrito o en audio lo que te pasa, para volver sobre ello cuando lo necesites.
+            </p>
+          </div>
+
+          <div class="feature feature-accent">
+            <h3>🤝 Acompañamiento profesional</h3>
+            <p class="muted">
+              Tu terapeuta puede acompañarte con devoluciones cuidadas dentro de un encuadre claro.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- MODALIDADES -->
+      <section id="modalidades" class="card landing-section">
+        <div class="section-kicker">
+          Modalidades
+        </div>
+
+        <h2>
+          Dos formas de acompañar tu proceso con MTM
+        </h2>
+
+        <p class="lead">
+          MTM puede adaptarse a distintos momentos de tu proceso terapéutico: como espacio principal para sesiones asincrónicas completas, o como complemento entre sesiones tradicionales.
+        </p>
+
+        <div class="grid grid-2">
+          <article class="feature feature-soft">
+            <h3>🎙️ Sesiones asincrónicas completas</h3>
+
+            <p class="muted">
+              Una forma de hacer terapia sin necesidad de coincidir siempre en un mismo día y horario.
+            </p>
+
+            <p class="muted">
+              Podés desarrollar lo que te pasa en audio o texto, expresarte con más tiempo y recibir una devolución terapéutica dentro de un encuadre acordado.
+            </p>
+          </article>
+
+          <article class="feature feature-accent">
+            <h3>🌿 Acompañamiento entre sesiones</h3>
+
+            <p class="muted">
+              Si preferís continuar con sesiones sincrónicas, MTM también puede funcionar como espacio complementario.
+            </p>
+
+            <p class="muted">
+              Podés registrar lo que aparece entre encuentros, compartir material importante, recibir recursos y sostener la continuidad de tu proceso.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ESPACIO PROPIO -->
+      <section class="card landing-section highlight-section">
+        <div class="section-kicker">
+          Un lugar para volver a vos
+        </div>
+
+        <h2>
+          Un espacio propio, con acompañamiento
+        </h2>
+
+        <p class="lead">
+          MTM te ofrece un lugar donde podés registrar lo que sentís, ordenar lo que pensás
+          y darle forma a tu experiencia sin apuro y sin juicio.
+        </p>
+
+        <p class="lead">
+          Podés usarlo a tu ritmo: para escribir, grabar audios, tomar notas, preparar una sesión,
+          profundizar en algo que apareció o compartir con tu terapeuta aquello que quieras trabajar.
+        </p>
+
+        <p class="lead highlight-text">
+          Es tu espacio, pero no estás solo/a. Tu terapeuta puede acompañarte, orientarte y ofrecerte recursos
+          para que tu proceso siga avanzando.
+        </p>
+      </section>
+
+      <!-- CÓMO FUNCIONA -->
+      <section id="como-funciona" class="card landing-section">
+        <div class="section-kicker">
+          Cómo funciona
+        </div>
+
+        <h2>
+          Simple, claro y con encuadre
+        </h2>
+
+        <p class="lead">
+          MTM está pensado para acompañar tu proceso de una forma simple, respetando tus tiempos y manteniendo un encuadre terapéutico claro.
+        </p>
+
+        <div class="steps-grid">
+
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <h3>Accedés a tu espacio terapéutico</h3>
+            <p class="muted">
+              Desde tu celular o computadora, en cualquier momento del día.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <h3>Te expresás cuando algo aparece</h3>
+            <p class="muted">
+              Podés escribir, grabar audios o tomar notas personales según lo que necesites.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <h3>Compartís lo que quieras trabajar</h3>
+            <p class="muted">
+              Podés elaborar primero y compartir con tu terapeuta cuando lo sientas necesario.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">4</span>
+            <h3>Recibís una devolución en un lapso acordado</h3>
+            <p class="muted">
+              No se trata de respuesta inmediata, sino de acompañamiento con tiempo, claridad y presencia.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- BENEFICIOS -->
+      <section id="beneficios" class="card landing-section">
+        <div class="section-kicker">
+          Beneficios
+        </div>
+
+        <h2>
+          Más continuidad, libertad y profundidad en tu proceso
+        </h2>
+
+        <div class="grid grid-3">
+
+          <div class="feature">
+            <h3>🕊️ Más libertad</h3>
+            <p class="muted">
+              La terapia puede adaptarse mejor a tus tiempos, sin depender siempre de un horario fijo.
+            </p>
+          </div>
+
+          <div class="feature feature-soft">
+            <h3>🌊 Más continuidad</h3>
+            <p class="muted">
+              Tu proceso no queda limitado a una sola hora por semana.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>🧭 Más claridad</h3>
+            <p class="muted">
+              Poner en palabras lo que te pasa ayuda a ordenar, entender e integrar mejor.
+            </p>
+          </div>
+
+          <div class="feature feature-accent">
+            <h3>🎙️ Más profundidad</h3>
+            <p class="muted">
+              Podés expresarte con más tiempo y volver sobre lo trabajado cuando lo necesites.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>🌱 Más autonomía</h3>
+            <p class="muted">
+              Avanzás a tu ritmo, con mayor protagonismo en tu proceso.
+            </p>
+          </div>
+
+          <div class="feature feature-soft">
+            <h3>🤝 Sin estar solo/a</h3>
+            <p class="muted">
+              Contás con acompañamiento profesional dentro de un marco claro y cuidado.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PARA QUIÉN ES -->
+      <section class="card landing-section">
+        <div class="section-kicker">
+          Para quién es
+        </div>
+
+        <h2>
+          MTM puede ser para vos si...
+        </h2>
+
+        <div class="check-list">
+          <p>Querés trabajar en vos con más continuidad y profundidad.</p>
+          <p>Sentís que una sesión semanal o quincenal no siempre alcanza para acompañar todo lo que se mueve en vos.</p>
+          <p>Te sirve expresarte por audio o por escrito.</p>
+          <p>Querés integrar emociones, ideas, decisiones, experiencias o aprendizajes en un mismo espacio terapéutico.</p>
+          <p>Buscás mayor autonomía, sin perder acompañamiento profesional.</p>
+          <p>Estás dispuesto/a a implicarte activamente en tu proceso.</p>
+        </div>
+        
+        <br>
+        <p class="lead highlight-text">
+          My Therapy Moment está pensado para personas que buscan una terapia más flexible,
+          continua y comprometida con su propio desarrollo.
+        </p>
+
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="card landing-section">
+        <div class="section-kicker">
+          Preguntas frecuentes
+        </div>
+
+        <h2>
+          Dudas habituales sobre la terapia asincrónica
+        </h2>
+
+        <div class="faq-list">
+          <details>
+            <summary>¿MTM puede reemplazar una sesión tradicional?</summary>
+            <p>
+              Sí. MTM puede usarse para realizar sesiones asincrónicas completas, sin necesidad de coincidir
+              en un día y horario fijo. También puede utilizarse como complemento de sesiones tradicionales,
+              si preferís sostener ambos formatos.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Mi terapeuta responde en el momento?</summary>
+            <p>
+              No necesariamente. MTM no funciona como mensajería inmediata. Tu terapeuta responde dentro de un lapso
+              acordado, con tiempo y atención para trabajar lo que compartiste.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Qué puedo compartir en MTM?</summary>
+            <p>
+              Podés compartir audios, textos, reflexiones, dudas, emociones, situaciones que quieras trabajar,
+              registros de tu proceso o material que consideres importante para tu terapia.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Puedo usar MTM aunque no tenga algo para compartir todas las semanas?</summary>
+            <p>
+              Sí. MTM favorece la continuidad, pero no busca generar presión. Podés usarlo según el ritmo de tu proceso
+              y los acuerdos establecidos con tu terapeuta.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Necesito instalar una app?</summary>
+            <p>
+              No necesariamente. Podés usar MTM desde el navegador. En muchos celulares también podés agregarlo como acceso directo
+              o instalarlo como aplicación web.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- CÓMO EMPEZAR -->
+      <section class="card landing-section">
+        <div class="section-kicker">Primeros pasos</div>
+
+        <h2>¿Cómo empezar?</h2>
+
+        <p class="lead">
+          Si tu terapeuta ya usa MTM, podés crear tu cuenta, ingresar el código de vinculación
+          y comenzar a usar tu espacio terapéutico.
+        </p>
+
+        <ol class="number-list">
+          <li>Ingresá a la app.</li>
+          <li>Creá tu cuenta.</li>
+          <li>Usá el código de vinculación que te dio tu terapeuta.</li>
+          <li>Accedé a tu espacio terapéutico.</li>
+          <li>Comenzá a expresarte en audio, texto o notas.</li>
+        </ol>
+
+        <div class="buttons">
+          <a class="btn btn-accent" href="/guia.html">Ver guía paso a paso</a>
+
           <a class="btn btn-primary" href="https://app.mytherapymoment.com/" target="_blank" rel="noopener noreferrer">
             Abrir la app
           </a>
+        </div>
+      </section>
+
+      <!-- CONSULTA / CTA FINAL -->
+      <section id="cta-final" class="cta-card">
+
+        <h2>
+          Tu proceso no tiene por qué esperar al próximo turno
+        </h2>
+
+        <p>
+          MTM te permite darle un lugar a lo que te pasa cuando aparece, con acompañamiento profesional,
+          encuadre y continuidad. Podés usarlo como espacio principal de trabajo terapéutico o como complemento entre sesiones.
+        </p>
+
+        <div class="hero-actions center-actions">
+          <a class="btn btn-primary" href="https://app.mytherapymoment.com/" target="_blank" rel="noopener noreferrer">
+            Abrir la app
+          </a>
+
           <a class="btn btn-accent" href="/guia.html">
             Ver guía de uso
           </a>
         </div>
-      </header>
 
-      <section class="card">
-        <h2>¿Qué es MTM?</h2>
-        <p class="lead">
-          My Therapy Moment es una plataforma de trabajo terapéutico asincrónico.
-          Podés enviar tus mensajes y audios en el momento que lo necesites, y tu terapeuta te responderá dentro del tiempo acordado.
+        <p class="cta-note">
+          Si estás conociendo MTM por primera vez, podés empezar explorando la guía o conversando con tu terapeuta sobre esta modalidad.
         </p>
-        <p class="lead">
-          A diferencia de otras aplicaciones de mensajería, MTM está diseñado para favorecer la reflexión, el orden y la profundidad.
-        </p>
-      </section>
 
-      <section class="card">
-        <h2>¿Cuándo puede ser útil?</h2>
+        <!-- Futuro -->
+        <!--
+        <a class="btn btn-secondary" href="#">
+          Entrevista inicial sin cargo
+        </a>
+        -->
 
-        <div class="grid grid-3">
-          <div class="feature feature-soft">
-            <strong>🧠 Procesar con más tiempo</strong>
-            <p class="muted">Pensar y expresar lo que sentís sin la presión del momento.</p>
-          </div>
-
-          <div class="feature feature-accent">
-            <strong>🎙️ Expresarte en profundidad</strong>
-            <p class="muted">Enviar audios o textos largos sin interrupciones.</p>
-          </div>
-
-          <div class="feature">
-            <strong>📅 Entre sesiones</strong>
-            <p class="muted">Mantener el trabajo terapéutico activo entre encuentros.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>¿Cómo empezar?</h2>
-        <ul>
-          <li>Ingresá a la app desde el botón superior</li>
-          <li>Registrate con el código de tu terapeuta</li>
-          <li>Accedé al chat y comenzá a expresarte</li>
-        </ul>
-
-        <p class="lead">Si es tu primera vez, te recomendamos ver la guía paso a paso.</p>
-
-        <div class="buttons">
-          <a class="btn btn-accent" href="/guia.html">Ir a la guía completa</a>
-        </div>
       </section>
 
       <footer class="site-footer">
