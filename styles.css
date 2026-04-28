@@ -739,8 +739,8 @@ footer.site-footer {
   }
 
   .eyebrow img {
-    width: clamp(60px, 18vw, 85px);
-    height: clamp(60px, 18vw, 85px);
+    width: clamp(65px, 20vw, 90px);
+    height: clamp(65px, 20vw, 90px);
     border-radius: 16px;
   }
 
