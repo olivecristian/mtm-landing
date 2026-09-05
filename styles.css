@@ -696,8 +696,28 @@ footer.site-footer {
   }
 }
 
+.acquisition-nav-link {
+  white-space: nowrap;
+}
+
+.acquisition-nav-link .desktop-nav-label {
+  display: inline;
+}
+
+.acquisition-nav-link .mobile-nav-label {
+  display: none;
+}
+
 /*MOBILE BURGER MENU*/
 @media (max-width: 900px) {
+  .acquisition-nav-link .desktop-nav-label {
+    display: none;
+  }
+
+  .acquisition-nav-link .mobile-nav-label {
+    display: inline;
+  }
+
   .landing-nav {
     top: 10px;
     align-items: center;
